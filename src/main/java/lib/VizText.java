@@ -23,10 +23,10 @@ public final class VizText {
         return input.substring(0,1).toUpperCase() + input.substring(1).toLowerCase();
     }
 
-    public static void slowMotionText(int delay, int alignment, boolean underline,
+    public static void slowMotionText(int delay, int alignment, boolean isUnderlineActive,
                                       String mainText, String additionalText) {
         String formatted = alignment(alignment)
-                + (underline ? UNDERLINE : "")
+                + (isUnderlineActive ? UNDERLINE : "")
                 + mainText + RESET + additionalText;
 
         for (char ch : formatted.toCharArray()) {

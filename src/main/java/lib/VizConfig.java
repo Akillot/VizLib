@@ -4,7 +4,6 @@ import java.io.*;
 
 public final class VizConfig {
     public int defaultDelay = 0;
-    public int searchingLineAlignment = 48;
     public int defaultTextAlignment = 58;
     public int defaultLogoAlignment = 48;
 

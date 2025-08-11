@@ -19,13 +19,8 @@ public final class VizAppearance {
     public static String getColor(int code) { return "\033[38;5;" + code + "m"; }
     public static String getBackColor(int code) { return "\033[48;5;" + code + "m"; }
 
-    public static String getRandomColor() {
-        return getColor(new Random().nextInt(256));
-    }
-
-    public static String getRandomBackColor() {
-        return getBackColor(new Random().nextInt(256));
-    }
+    public static String getRandomColor() {return getColor(new Random().nextInt(256));}
+    public static String getRandomBackColor() {return getBackColor(new Random().nextInt(256));}
 
     public static String getRangedRandomColor(int origin, int bound) {
         int code = 0;
