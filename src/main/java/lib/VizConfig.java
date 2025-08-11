@@ -25,6 +25,9 @@ public final class VizConfig {
     public static final String DEFAULT_PATH = "config.json";
 
     /*
+     * Author: Nick Zozulia
+     * GitHub: https://github.com/Akillot
+     *
      * Loads config from file if it exists, otherwise returns a new instance with default values.
      * If you want JSON support, uncomment Gson code and add the dependency.
      */
