@@ -1,12 +1,18 @@
 package lib;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.*;
 
+@Getter
+@Setter
 public final class VizConfig {
     public int defaultDelay = 0;
     public int defaultTextAlignment = 58;
     public int defaultLogoAlignment = 48;
 
+    // Default colors, which can be changed by @Setter
     public int color1 = 219;
     public int color2 = 183;
     public int color3 = 147;
@@ -30,6 +36,7 @@ public final class VizConfig {
      * Loads config from file if it exists, otherwise returns a new instance with default values.
      * If you want JSON support, uncomment Gson code and add the dependency.
      */
+
     public static VizConfig loadOrDefault() {
         try (Reader r = new FileReader(DEFAULT_PATH)) {
             // With Gson enabled:

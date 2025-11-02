@@ -41,9 +41,9 @@ public final class VizDisplay {
 
     private static String[] getColorsForLogo() {
         return new String[]{
-                getColor(cfg.layoutColor), getColor(cfg.layoutColor),
-                getColor(cfg.layoutColor), getColor(cfg.layoutColor),
-                getColor(cfg.layoutColor), getColor(cfg.layoutColor)
+                getColor(cfg.color1), getColor(cfg.color2),
+                getColor(cfg.color3), getColor(cfg.color4),
+                getColor(cfg.color5), getColor(cfg.color6)
         };
     }
 }
